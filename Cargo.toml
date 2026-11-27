@@ -1,0 +1,13 @@
+[package]
+name = "rustos-fb"
+version = "0.1.0"
+edition = "2021"
+description = "RustOS framebuffer console: pixel drawing over a GOP framebuffer with an embedded 8x8 bitmap font (drawn doubled into 8x16 cells). no_std, host-testable."
+license = "MIT OR Apache-2.0"
+
+[lib]
+name = "rustos_fb"
+path = "src/lib.rs"
+
+[profile.dev]
+panic = "abort"
